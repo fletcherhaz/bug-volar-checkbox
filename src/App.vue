@@ -1,10 +1,14 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <input type="checkbox" v-model="test">
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+
+const test = ref(true)
 </script>
 
 <style>
